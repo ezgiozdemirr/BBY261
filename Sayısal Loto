@@ -1,6 +1,8 @@
 import kotlin.random.Random
 
 fun main() {
+    var a=1
+    repeat(6){
     var sec: Int = 0
 	var secilenler: IntArray = intArrayOf(0, 0, 0, 0, 0, 0)
     while(sec < 6){
@@ -9,12 +11,11 @@ fun main() {
            secilenler[sec] = secilen
         	sec++
         }
-        repeat(6) { i ->
-    print(secilen)
-}
     }
     secilenler.sort()
     for(sayilar in secilenler){
         print(sayilar.toString()+" ")
     }
+    println(" ")
+}
 }
